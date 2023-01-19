@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		226FA89A296FAB33004183CE /* ReceiptParser in Frameworks */ = {isa = PBXBuildFile; productRef = 226FA899296FAB33004183CE /* ReceiptParser */; };
+		226FA89C296FAB33004183CE /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 226FA89B296FAB33004183CE /* RevenueCat */; };
+		226FA89F296FAB5D004183CE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 226FA89E296FAB5D004183CE /* StoreKit.framework */; };
+		226FA8DF297137CA004183CE /* CatKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226FA8DE297137CA004183CE /* CatKey.swift */; };
+		226FA8E4297145F5004183CE /* SettingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226FA8E3297145F5004183CE /* SettingSheet.swift */; };
+		226FA8E629714606004183CE /* PayWallSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226FA8E529714606004183CE /* PayWallSheet.swift */; };
+		226FA8E929715F44004183CE /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226FA8E829715F44004183CE /* Int+Extension.swift */; };
+		226FA8EC2972636D004183CE /* SubscriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226FA8EB2972636D004183CE /* SubscriptionViewModel.swift */; };
+		226FA8EE2973C563004183CE /* RevenueCat+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226FA8ED2973C563004183CE /* RevenueCat+Extension.swift */; };
+		226FA8F0297406CA004183CE /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226FA8EF297406CA004183CE /* AppSetting.swift */; };
+		22ADDFC72954963E00F94688 /* Vocab_RememberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDFC62954963E00F94688 /* Vocab_RememberApp.swift */; };
+		22ADDFC92954963E00F94688 /* VocabCollectionListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDFC82954963E00F94688 /* VocabCollectionListScreen.swift */; };
+		22ADDFCB2954963F00F94688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22ADDFCA2954963F00F94688 /* Assets.xcassets */; };
+		22ADDFCE2954963F00F94688 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22ADDFCD2954963F00F94688 /* Preview Assets.xcassets */; };
+		22ADDFD02954963F00F94688 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDFCF2954963F00F94688 /* Persistence.swift */; };
+		22ADDFD32954963F00F94688 /* Vocab_Remember.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDFD12954963F00F94688 /* Vocab_Remember.xcdatamodeld */; };
+		22ADDFDB2954995900F94688 /* VocabCollection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDFDA2954995900F94688 /* VocabCollection+Extension.swift */; };
+		22ADDFDD29549B0800F94688 /* VocabCollectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDFDC29549B0800F94688 /* VocabCollectionScreen.swift */; };
+		22ADDFDF29549E3A00F94688 /* AddCollectionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDFDE29549E3A00F94688 /* AddCollectionSheet.swift */; };
+		22ADDFE12954A58700F94688 /* VocabEditScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDFE02954A58700F94688 /* VocabEditScreen.swift */; };
+		22ADDFE32954A71900F94688 /* AddVocabSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDFE22954A71900F94688 /* AddVocabSheet.swift */; };
+		22ADDFE72957D97500F94688 /* RememberScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDFE62957D97500F94688 /* RememberScreen.swift */; };
+		22ADDFEC2959F71000F94688 /* SpeakManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ADDFEB2959F71000F94688 /* SpeakManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		226FA89E296FAB5D004183CE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		226FA8DE297137CA004183CE /* CatKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatKey.swift; sourceTree = "<group>"; };
+		226FA8E3297145F5004183CE /* SettingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSheet.swift; sourceTree = "<group>"; };
+		226FA8E529714606004183CE /* PayWallSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallSheet.swift; sourceTree = "<group>"; };
+		226FA8E829715F44004183CE /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		226FA8EB2972636D004183CE /* SubscriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewModel.swift; sourceTree = "<group>"; };
+		226FA8ED2973C563004183CE /* RevenueCat+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RevenueCat+Extension.swift"; sourceTree = "<group>"; };
+		226FA8EF297406CA004183CE /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
+		22ADDFC32954963E00F94688 /* Vocab Remember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vocab Remember.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22ADDFC62954963E00F94688 /* Vocab_RememberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocab_RememberApp.swift; sourceTree = "<group>"; };
+		22ADDFC82954963E00F94688 /* VocabCollectionListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabCollectionListScreen.swift; sourceTree = "<group>"; };
+		22ADDFCA2954963F00F94688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22ADDFCD2954963F00F94688 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22ADDFCF2954963F00F94688 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		22ADDFD22954963F00F94688 /* Vocab_Remember.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vocab_Remember.xcdatamodel; sourceTree = "<group>"; };
+		22ADDFD42954963F00F94688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22ADDFDA2954995900F94688 /* VocabCollection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VocabCollection+Extension.swift"; sourceTree = "<group>"; };
+		22ADDFDC29549B0800F94688 /* VocabCollectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabCollectionScreen.swift; sourceTree = "<group>"; };
+		22ADDFDE29549E3A00F94688 /* AddCollectionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCollectionSheet.swift; sourceTree = "<group>"; };
+		22ADDFE02954A58700F94688 /* VocabEditScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabEditScreen.swift; sourceTree = "<group>"; };
+		22ADDFE22954A71900F94688 /* AddVocabSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVocabSheet.swift; sourceTree = "<group>"; };
+		22ADDFE62957D97500F94688 /* RememberScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberScreen.swift; sourceTree = "<group>"; };
+		22ADDFEB2959F71000F94688 /* SpeakManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22ADDFC02954963E00F94688 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226FA89F296FAB5D004183CE /* StoreKit.framework in Frameworks */,
+				226FA89C296FAB33004183CE /* RevenueCat in Frameworks */,
+				226FA89A296FAB33004183CE /* ReceiptParser in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		226FA89D296FAB5D004183CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				226FA89E296FAB5D004183CE /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		226FA8DD297137B8004183CE /* GitIgnore */ = {
+			isa = PBXGroup;
+			children = (
+				226FA8DE297137CA004183CE /* CatKey.swift */,
+			);
+			path = GitIgnore;
+			sourceTree = "<group>";
+		};
+		226FA8E02971458C004183CE /* Browse and Add */ = {
+			isa = PBXGroup;
+			children = (
+				22ADDFC82954963E00F94688 /* VocabCollectionListScreen.swift */,
+				22ADDFDC29549B0800F94688 /* VocabCollectionScreen.swift */,
+				22ADDFDE29549E3A00F94688 /* AddCollectionSheet.swift */,
+				22ADDFE22954A71900F94688 /* AddVocabSheet.swift */,
+			);
+			path = "Browse and Add";
+			sourceTree = "<group>";
+		};
+		226FA8E1297145A4004183CE /* Remember and Edit */ = {
+			isa = PBXGroup;
+			children = (
+				22ADDFE62957D97500F94688 /* RememberScreen.swift */,
+				22ADDFE02954A58700F94688 /* VocabEditScreen.swift */,
+			);
+			path = "Remember and Edit";
+			sourceTree = "<group>";
+		};
+		226FA8E2297145C7004183CE /* Setting and Pay */ = {
+			isa = PBXGroup;
+			children = (
+				226FA8E3297145F5004183CE /* SettingSheet.swift */,
+				226FA8E529714606004183CE /* PayWallSheet.swift */,
+			);
+			path = "Setting and Pay";
+			sourceTree = "<group>";
+		};
+		226FA8E729715F2E004183CE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				226FA8E829715F44004183CE /* Int+Extension.swift */,
+				226FA8ED2973C563004183CE /* RevenueCat+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		226FA8EA29726343004183CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				226FA8EB2972636D004183CE /* SubscriptionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		22ADDFBA2954963E00F94688 = {
+			isa = PBXGroup;
+			children = (
+				226FA8DD297137B8004183CE /* GitIgnore */,
+				22ADDFC52954963E00F94688 /* Vocab Remember */,
+				22ADDFC42954963E00F94688 /* Products */,
+				226FA89D296FAB5D004183CE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22ADDFC42954963E00F94688 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22ADDFC32954963E00F94688 /* Vocab Remember.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22ADDFC52954963E00F94688 /* Vocab Remember */ = {
+			isa = PBXGroup;
+			children = (
+				22ADDFC62954963E00F94688 /* Vocab_RememberApp.swift */,
+				226FA8E729715F2E004183CE /* Extension */,
+				22ADDFE92959F6C800F94688 /* Managers */,
+				22ADDFEA2959F6E900F94688 /* Models */,
+				226FA8EA29726343004183CE /* ViewModel */,
+				22ADDFE82959F6AF00F94688 /* Views */,
+				22ADDFCA2954963F00F94688 /* Assets.xcassets */,
+				22ADDFD42954963F00F94688 /* Info.plist */,
+				22ADDFD12954963F00F94688 /* Vocab_Remember.xcdatamodeld */,
+				22ADDFCC2954963F00F94688 /* Preview Content */,
+			);
+			path = "Vocab Remember";
+			sourceTree = "<group>";
+		};
+		22ADDFCC2954963F00F94688 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				22ADDFCD2954963F00F94688 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22ADDFE82959F6AF00F94688 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				226FA8E02971458C004183CE /* Browse and Add */,
+				226FA8E1297145A4004183CE /* Remember and Edit */,
+				226FA8E2297145C7004183CE /* Setting and Pay */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22ADDFE92959F6C800F94688 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				22ADDFCF2954963F00F94688 /* Persistence.swift */,
+				22ADDFEB2959F71000F94688 /* SpeakManager.swift */,
+				226FA8EF297406CA004183CE /* AppSetting.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		22ADDFEA2959F6E900F94688 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22ADDFDA2954995900F94688 /* VocabCollection+Extension.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22ADDFC22954963E00F94688 /* Vocab Remember */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22ADDFD72954963F00F94688 /* Build configuration list for PBXNativeTarget "Vocab Remember" */;
+			buildPhases = (
+				22ADDFBF2954963E00F94688 /* Sources */,
+				22ADDFC02954963E00F94688 /* Frameworks */,
+				22ADDFC12954963E00F94688 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vocab Remember";
+			packageProductDependencies = (
+				226FA899296FAB33004183CE /* ReceiptParser */,
+				226FA89B296FAB33004183CE /* RevenueCat */,
+			);
+			productName = "Vocab Remember";
+			productReference = 22ADDFC32954963E00F94688 /* Vocab Remember.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22ADDFBB2954963E00F94688 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					22ADDFC22954963E00F94688 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 22ADDFBE2954963E00F94688 /* Build configuration list for PBXProject "Vocab Remember" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22ADDFBA2954963E00F94688;
+			packageReferences = (
+				226FA898296FAB32004183CE /* XCRemoteSwiftPackageReference "purchases-ios" */,
+			);
+			productRefGroup = 22ADDFC42954963E00F94688 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22ADDFC22954963E00F94688 /* Vocab Remember */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22ADDFC12954963E00F94688 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22ADDFCE2954963F00F94688 /* Preview Assets.xcassets in Resources */,
+				22ADDFCB2954963F00F94688 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22ADDFBF2954963E00F94688 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				226FA8E929715F44004183CE /* Int+Extension.swift in Sources */,
+				22ADDFDF29549E3A00F94688 /* AddCollectionSheet.swift in Sources */,
+				22ADDFE32954A71900F94688 /* AddVocabSheet.swift in Sources */,
+				22ADDFD32954963F00F94688 /* Vocab_Remember.xcdatamodeld in Sources */,
+				22ADDFE12954A58700F94688 /* VocabEditScreen.swift in Sources */,
+				226FA8E629714606004183CE /* PayWallSheet.swift in Sources */,
+				22ADDFEC2959F71000F94688 /* SpeakManager.swift in Sources */,
+				226FA8EC2972636D004183CE /* SubscriptionViewModel.swift in Sources */,
+				22ADDFDB2954995900F94688 /* VocabCollection+Extension.swift in Sources */,
+				22ADDFE72957D97500F94688 /* RememberScreen.swift in Sources */,
+				226FA8E4297145F5004183CE /* SettingSheet.swift in Sources */,
+				22ADDFDD29549B0800F94688 /* VocabCollectionScreen.swift in Sources */,
+				22ADDFD02954963F00F94688 /* Persistence.swift in Sources */,
+				226FA8EE2973C563004183CE /* RevenueCat+Extension.swift in Sources */,
+				226FA8F0297406CA004183CE /* AppSetting.swift in Sources */,
+				22ADDFC92954963E00F94688 /* VocabCollectionListScreen.swift in Sources */,
+				226FA8DF297137CA004183CE /* CatKey.swift in Sources */,
+				22ADDFC72954963E00F94688 /* Vocab_RememberApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		22ADDFD52954963F00F94688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22ADDFD62954963F00F94688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22ADDFD82954963F00F94688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vocab Remember/Preview Content\"";
+				DEVELOPMENT_TEAM = DXUHD47ZA5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Vocab Remember";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "WindForceStudio.Vocab-Remember";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22ADDFD92954963F00F94688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vocab Remember/Preview Content\"";
+				DEVELOPMENT_TEAM = DXUHD47ZA5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Vocab Remember";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "WindForceStudio.Vocab-Remember";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22ADDFBE2954963E00F94688 /* Build configuration list for PBXProject "Vocab Remember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22ADDFD52954963F00F94688 /* Debug */,
+				22ADDFD62954963F00F94688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22ADDFD72954963F00F94688 /* Build configuration list for PBXNativeTarget "Vocab Remember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22ADDFD82954963F00F94688 /* Debug */,
+				22ADDFD92954963F00F94688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		226FA898296FAB32004183CE /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		226FA899296FAB33004183CE /* ReceiptParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 226FA898296FAB32004183CE /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = ReceiptParser;
+		};
+		226FA89B296FAB33004183CE /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 226FA898296FAB32004183CE /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		22ADDFD12954963F00F94688 /* Vocab_Remember.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				22ADDFD22954963F00F94688 /* Vocab_Remember.xcdatamodel */,
+			);
+			currentVersion = 22ADDFD22954963F00F94688 /* Vocab_Remember.xcdatamodel */;
+			path = Vocab_Remember.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 22ADDFBB2954963E00F94688 /* Project object */;
+}

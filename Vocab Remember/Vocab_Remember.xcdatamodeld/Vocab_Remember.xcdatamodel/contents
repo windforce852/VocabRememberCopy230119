@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22A380" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Tag" representedClassName="Tag" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="tagToVocab" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vocab" inverseName="vocabToTag" inverseEntity="Vocab"/>
+    </entity>
+    <entity name="Vocab" representedClassName="Vocab" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="inLang1" optional="YES" attributeType="String"/>
+        <attribute name="inLang2" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="vocabToTag" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="tagToVocab" inverseEntity="Tag"/>
+        <relationship name="vocabToVocabCollection" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VocabCollection" inverseName="vocabCollectionToVocab" inverseEntity="VocabCollection"/>
+    </entity>
+    <entity name="VocabCollection" representedClassName="VocabCollection" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="vocabCollectionToVocab" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Vocab" inverseName="vocabToVocabCollection" inverseEntity="Vocab"/>
+    </entity>
+</model>
